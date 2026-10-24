@@ -19,7 +19,7 @@ The goal of the project is to create a fully functional command-line file manage
 
 | Command | Definition                                                                                     | Usage                                                        | Example                                                    |
 | ------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | ---------------------------------------------------------- |
-| cp      | copying file/directory from source to destination                                              | `copy "source" "destination"`                                | `copy ./main.go ./go.main`                                 |
+| cp      | copying file/directory from source to destination                                              | `cp "source" "destination"`                                | `copy ./main.go ./go.main`                                 |
 | cd      | goes to the specified directory                                                                | `cd "destination"`                                           | `cd /home/weirdboot`                                       |
 | rm      | deletes the specified file or (empty) directory<br>Use `-d` flag to delete non-empty directory | `rm "file_dest" "empty_dir_dest"`<br>`rm -d "non_empty_dir"` | `rm -d ./non_empty_dir`<br>`rm ../photos2009 ../script.sh` |
 | ls      | displays files in the specified directory                                                      | `ls "destination"`<br>`ls`                                   | `ls`<br>`ls /home/weirdboot /usr`                          |
