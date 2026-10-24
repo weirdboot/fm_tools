@@ -5,13 +5,14 @@ The goal of the project is to create a fully functional command-line file manage
 
 ### Setup & Usage
 
-**Requirements:** `go1.27.3` and above
+**Requirements:** `go1.22` and above
 
 1. Clone the repository with Git
-   ```shell
+   ````shell
    git clone https://github.com/weirdboot/fm_tools.git
    cd fm\_tools
    go build -trimpath -ldflags="-s -w" -o app .```
+   ````
 2. Run program
    `./app`
 
@@ -19,7 +20,7 @@ The goal of the project is to create a fully functional command-line file manage
 
 | Command | Definition                                                                                     | Usage                                                        | Example                                                    |
 | ------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | ---------------------------------------------------------- |
-| cp      | copying file/directory from source to destination                                              | `cp "source" "destination"`                                | `copy ./main.go ./go.main`                                 |
+| cp      | copying file/directory from source to destination                                              | `cp "source" "destination"`                                  | `copy ./main.go ./go.main`                                 |
 | cd      | goes to the specified directory                                                                | `cd "destination"`                                           | `cd /home/weirdboot`                                       |
 | rm      | deletes the specified file or (empty) directory<br>Use `-d` flag to delete non-empty directory | `rm "file_dest" "empty_dir_dest"`<br>`rm -d "non_empty_dir"` | `rm -d ./non_empty_dir`<br>`rm ../photos2009 ../script.sh` |
 | ls      | displays files in the specified directory                                                      | `ls "destination"`<br>`ls`                                   | `ls`<br>`ls /home/weirdboot /usr`                          |
@@ -31,4 +32,5 @@ The goal of the project is to create a fully functional command-line file manage
 | exit    | completes the program                                                                          | `exit`                                                       | `exit`                                                     |
 
 ### Showcase
+
 ![Showcase](showcase.gif)

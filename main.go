@@ -6,15 +6,13 @@ import (
 )
 
 func main() {
-	exit := make(chan int, 1)
 	for {
-		select {
-		case <-exit:
+		shouldExit, err := internal.Run()
+		if err != nil {
+			fmt.Println(err)
+		}
+		if shouldExit {
 			return
-		default:
-			if err := internal.Run(&exit); err != nil {
-				fmt.Println(err)
-			}
 		}
 	}
 }
