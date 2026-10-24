@@ -8,9 +8,9 @@ The goal of the project is to create a fully functional command-line file manage
 **Requirements:** `go1.27.3` and above
 
 1. Clone the repository with Git
-   `git clone https://github.com/weirdboot/fm_tools.git`
-   `cd fm\_tools`
-   `go build -trimpath -ldflags="-s -w" -o app .`
+   ```git clone https://github.com/weirdboot/fm_tools.git
+   cd fm\_tools
+   go build -trimpath -ldflags="-s -w" -o app .```
 2. Run program
    `./app`
 
