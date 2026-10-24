@@ -1,7 +1,20 @@
 package main
 
-import "fmt"
+import (
+	"fm_tools/internal"
+	"fmt"
+)
 
 func main() {
-	fmt.Println("First Commit!")
+	exit := make(chan int, 1)
+	for {
+		select {
+		case <-exit:
+			return
+		default:
+			if err := internal.Run(&exit); err != nil {
+				fmt.Println(err)
+			}
+		}
+	}
 }
