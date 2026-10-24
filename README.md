@@ -30,5 +30,4 @@ The goal of the project is to create a fully functional command-line file manage
 | exit    | completes the program                                                                          | `exit`                                                       | `exit`                                                     |
 
 ### Showcase
-
-![[showcase.gif|700]]
+![Showcase](showcase.gif)
