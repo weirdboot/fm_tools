@@ -4,9 +4,8 @@ This project, called `fm_tools` (`fm` is short of `file manager`), is intended t
 The goal of the project is to create a fully functional command-line file manager.
 
 ### Setup & Usage
-
+#### From source
 **Requirements:** `go1.22` and above
-
 1. Clone the repository with Git
    ````shell
    git clone https://github.com/weirdboot/fm_tools.git
@@ -15,6 +14,18 @@ The goal of the project is to create a fully functional command-line file manage
    ````
 2. Run program
    `./app`
+#### Binary releases
+Download the binary for your platform from [Releases](https://github.com/weirdboot/fm_tools/releases).
+
+**Linux/macOS:**
+```
+chmod +x fm-linux-amd64
+./fm-linux-amd64
+```
+**Windows:**
+```
+fm-windows-amd64.exe
+```
 
 ### Supported CLI commands
 
